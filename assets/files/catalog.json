@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iphone 12 pro",
+            "desc": "Apple iphone 12th generation",
+            "price": 999,
+            "color": "#3305a",
+            "image": "https://img1.gadgetsnow.com/gd/images/products/original/G201754.jpg"
+        },
+        {
+            "id": 2,
+            "name": "ipad mini",
+            "desc": "ipad mini ",
+            "price": 545,
+            "color": "#3305a",
+            "image": "https://www.aptronixindia.com/media/catalog/product/i/p/ipadminiwi-ficellular64gb-silver.png"
+        },
+        {
+            "id": 3,
+            "name": "iphone 13 pro",
+            "desc": "Apple iphone 12th generation",
+            "price": 999,
+            "color": "#3305a",
+            "image": "https://www.apple.com/newsroom/images/product/iphone/geo/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_GEO_09142021_inline.jpg.slideshow-large_2x.jpg"
+        }
+    ]
+}

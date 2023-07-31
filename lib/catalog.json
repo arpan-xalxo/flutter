@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "id": "Codepur001",
+            "name": "iphone 12 pro",
+            "desc": "Apple iphone 12th generation",
+            "price": 999,
+            "color": "#3305a",
+            "image": "https://img.freepik.com/premium-photo/majestic-mountain-range-sunrise-with-small-lake-lone-tree-foreground_685067-2693.jpg"
+        },
+        {
+            "id": "Codepur001",
+            "name": "iphone 12 pro",
+            "desc": "Apple iphone 12th generation",
+            "price": 999,
+            "color": "#3305a",
+            "image": "https://img.freepik.com/premium-photo/majestic-mountain-range-sunrise-with-small-lake-lone-tree-foreground_685067-2693.jpg"
+        },
+        {
+            "id": "Codepur001",
+            "name": "iphone 12 pro",
+            "desc": "Apple iphone 12th generation",
+            "price": 999,
+            "color": "#3305a",
+            "image": "https://img.freepik.com/premium-photo/majestic-mountain-range-sunrise-with-small-lake-lone-tree-foreground_685067-2693.jpg"
+        }
+    ]
+}

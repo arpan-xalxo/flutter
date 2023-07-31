@@ -2,16 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
+  const MyDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
-    final imageurl =
+    const imageurl =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4ylDTKID2SUKztyQzWt3kTfRM15GzLJuqg&usqp=CAU";
     return Drawer(
       child: Container(
         color: Colors.deepPurpleAccent,
         child: ListView(
           padding: EdgeInsets.zero,
-          children: [
+          children: const [
             DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
