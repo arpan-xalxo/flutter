@@ -19,9 +19,9 @@ class HomeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: context.canvasColor,
       ),
-      backgroundColor: MyTheme.cremeColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: ButtonBar(
         alignment: MainAxisAlignment.spaceBetween,
         buttonPadding: EdgeInsets.zero,
@@ -54,7 +54,7 @@ class HomeDetailPage extends StatelessWidget {
               arcType: VxArcType.convey,
               edge: VxEdge.top,
               child: Container(
-                color: Colors.white10,
+                color: context.cardColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [
