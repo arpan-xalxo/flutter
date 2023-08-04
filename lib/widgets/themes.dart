@@ -27,6 +27,6 @@ class MyTheme {
 
   static Color cremeColor = Color(0xfff5f5f5);
   static Color darkcremeColor = Vx.gray100;
-  static Color darkBlueColor = Color(0xff403b58);
+  static Color darkBlueColor = Color.fromARGB(255, 0, 0, 0);
   static Color lightBlueColor = Vx.purple400;
 }

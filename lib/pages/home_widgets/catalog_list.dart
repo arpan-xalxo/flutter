@@ -21,7 +21,9 @@ class CatalogList extends StatelessWidget {
             onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => HomeDetailPage(catalog: catalog))),
+                    builder: (context) => HomeDetailPage(catalog: catalog
+                        //CatalogModel.getById(2), if you want to display by id the
+                        ))),
             child: CatalogItem(catalog: catalog));
       },
     );
@@ -70,6 +72,6 @@ class CatalogItem extends StatelessWidget {
               ],
             ).pOnly(right: 8.0)
           ])),
-    ])).color(context.cardColor).roundedLg.square(150).make().py12();
+    ])).color(context.canvasColor).roundedLg.square(150).make().py12();
   }
 }

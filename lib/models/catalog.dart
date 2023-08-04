@@ -12,6 +12,17 @@ class CatalogModel {
           "https://img1.gadgetsnow.com/gd/images/products/original/G201754.jpg",
     ),
   ];
+
+  /*   //get Item by ID
+ static getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+  //get Item by position
+  
+  
+  static Item getByPosition(int pos) => items[pos];
+
+*/
 }
 
 class Item {

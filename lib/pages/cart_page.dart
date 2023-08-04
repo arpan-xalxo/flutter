@@ -8,11 +8,68 @@ class CartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyTheme.cremeColor,
+      backgroundColor: context.cardColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: "Cart".text.color(Colors.black).xl3.make(),
       ),
+      body: Column(
+        children: [
+          _CartList().p32().expand(),
+          Divider(),
+          _CartTotal(),
+        ],
+      ),
     );
+  }
+}
+
+class _CartTotal extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 200,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          "\$9999".text.xl4.make(),
+          30.widthBox,
+          ElevatedButton(
+                  onPressed: () {
+                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Buying not supported".text.bold.make()));
+                  },
+                  style: ButtonStyle(
+                      alignment: Alignment.center,
+                      backgroundColor:
+                          MaterialStateProperty.all(context.canvasColor)),
+                  child: "Buy".text.white.make())
+              .w32(context)
+        ],
+      ),
+    );
+  }
+}
+
+class _CartList extends StatefulWidget {
+  const _CartList({super.key});
+
+  @override
+  State<_CartList> createState() => __CartListState();
+}
+
+class __CartListState extends State<_CartList> {
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+        itemCount: 5,
+        itemBuilder: (context, index) => ListTile(
+              leading: Icon(Icons.done),
+              trailing: IconButton(
+                icon: Icon(Icons.remove_circle_outline),
+                onPressed: () {},
+              ),
+              title: "Item 1".text.make(),
+            ));
   }
 }
